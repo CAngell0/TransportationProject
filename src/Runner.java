@@ -59,7 +59,7 @@ public class Runner
       extraCost = 0;
 
       double tripTotalCost = priceOfGas * (miles / (double) mpg) + extraCost;
-      
+       
        
       System.out.println("The values for trip 3 are: ");
       System.out.println("Price of gas = " + priceOfGas);
@@ -90,12 +90,12 @@ public class Runner
 
       //Outputting and calculating results
       tripTotalCost = priceOfGas * (miles / (double) mpg) + extraCost;
-      System.out.println("\nThe total cost for trip " + tripNumber + " is: $" + tripTotalCost);
+      // System.out.println("\nThe total cost for trip " + tripNumber + " is: $" + tripTotalCost);
 
-      System.out.println("\nCalculating the average for our trips");
+      // System.out.println("\nCalculating the average for our trips");
 
       double tripFourCost = priceOfGas * (miles / (double) mpg) + extraCost;
-
+ 
       //Stores the input of the costs into an array
       //I decided to code it a bit differently than what was guided to have some fun
       double costs[] = {0.0, 0.0, 0.0, 0.0};
@@ -156,7 +156,7 @@ public class Runner
 
       boolean isSecondCheaper = tripOneCost >= tripTwoCost;
 
-      System.out.println("Is the second trip cheaper or the same: " + isSecondCheaper);
+      System.out.println("Is the second trip cheaper or the same as trip 1: " + isSecondCheaper);
 
       boolean isFirstCheaperThanThird = tripOneCost < tripTotalCost;
       boolean isThirdCheaperThanFourth = tripTotalCost < tripFourCost;
@@ -167,5 +167,6 @@ public class Runner
       System.out.println("Is trip 2 cheaper than trip 3: " + isSecondCheaperThanThird);
       System.out.println("Is trip 1 cheaper than trip 3: " + isFirstCheaperThanSecond);
       
+      textInput.close();
    }
 }
